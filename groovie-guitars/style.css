@@ -1,0 +1,194 @@
+
+/* font customization */
+@import url('https://fonts.googleapis.com/css2?family=Cagliostro&family=Hepta+Slab:wght@1..900&display=swap');
+body{
+  font-family: "Cagliostro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: block;
+  text-align: center;
+}
+p{
+	font-size: 20px;
+	margin: 30px;
+	padding: 5px;
+}
+h2{
+	background: #2A7B9B;
+	background: linear-gradient(146deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+	box-sizing: border-box;
+	padding: 20px;
+	margin: 40px;
+}
+/* Navigation customization */
+nav{
+    font-weight: bold;
+    text-align: center;
+    line-height: 200%;
+    background-color: #1B3440;
+  }
+nav ul{
+	list-style-type: none;
+	margin: 0;
+  	padding: 10px;
+}
+nav a{
+	text-decoration: none;
+}
+nav li{
+	display: inline;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+nav a:link{
+	color: hotpink;
+}
+nav a:hover{
+	color: Green;
+}
+nav a:visited{
+	color: white;
+}
+nav a:active{
+	color: black;
+}
+
+/* logo */
+.logo{
+	max-width: 20%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	padding: 20px;
+}
+/* Home hero customization */
+#home-hero{
+	background-image: url(images/guitars.jpg);
+	height: 350px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#home-hero h1{
+	text-align: center;
+	color: white;
+	text-shadow: 4px 4px 4px orangered;
+	margin: 0;
+	padding: 2em;
+	font-size: 4em;
+}
+/* header banner gradient */
+header{
+	background: #2A7B9B;
+	background: linear-gradient(146deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+	width: inherit;
+}
+
+/* table customization */
+table{
+	border-collapse: collapse;
+	margin: 0 auto;
+	border: 3px solid black;
+}
+tr:nth-child(even){
+	background-color: #eeeeee;
+}
+th{
+	background-color: #9AD05C;
+}
+td{
+	border: 1px solid #dddddd;
+	padding: 10px;
+}
+
+/* submission customization */
+form{
+	border: solid black;
+	border-radius: 15px;
+	width: 340px;
+	background-color: #B6D592;
+	margin-right: 10px;
+	padding: 40px;
+}
+#form{
+	margin-right: 10%;
+	width: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+label{
+	width: 4em;
+	padding-right: 1em;
+	padding: 1em;
+	margin-right: 25px;
+}
+input, textarea{
+	margin-bottom: 10px;
+	display: block;
+	text-align: left;
+}
+input[type=sumbit]{
+	display: block;
+	background-color: lightgray;
+}
+
+#image-and-form{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* images, id or class */
+.groovy-player{
+	float: left;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px black;
+	max-width: 350px;
+	padding: 0;
+	margin: 40px;
+}
+#groovy-player{
+	display: flex;
+	justify-content: left;
+	overflow: hidden;
+	display: block;
+	font-size: 20px;
+
+}
+.lessons{
+	float: left;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px black;
+	max-width: 50%;
+	padding: 0;
+	margin: 40px;
+}
+#lessons{
+	display: flex;
+	justify-content: right;
+	overflow: hidden;
+	display: block;
+	font-size: 20px;
+	align-items: center;
+	display: flex;
+}
+
+/* video container */
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
